@@ -1,0 +1,486 @@
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+#include<stdlib.h>
+int main()
+{
+printf("*          *   ***************   *                 ***************   ***************   **        **   ***************\n");
+printf("*          *   *                 *                 *                 *             *   * *      * *   *              \n");
+printf("*          *   *                 *                 *                 *             *   *  *    *  *   *              \n");
+printf("*          *   *                 *                 *                 *             *   *   *  *   *   *              \n");
+printf("*    **    *   ***********       *                 *                 *             *   *    **    *   ***********    \n");
+printf("*   *  *   *   *                 *                 *                 *             *   *          *   *              \n");
+printf("*  *    *  *   *                 *                 *                 *             *   *          *   *              \n");
+printf("* *      * *   *                 *                 *                 *             *   *          *   *              \n");
+printf("**        **   ***************   ***************   ***************   ***************   *          *   ***************\n");
+printf("\n");
+printf("\n");
+printf("\n");
+printf("\n");
+printf("                                         ***************   ***************\n");
+printf("                                                *          *             *\n");
+printf("                                                *          *             *\n");
+printf("                                                *          *             *\n");
+printf("                                                *          *             *\n");
+printf("                                                *          *             *\n");
+printf("                                                *          *             *\n");
+printf("                                                *          *             *\n");
+printf("                                                *          ***************\n");
+printf("\n");
+printf("\n");
+printf("\n");
+printf("\n");
+printf(" ***************                **             ***************   ***************   ***************   *             *\n");
+printf("        *                      * *                    *          *                 *                 *             *\n");
+printf("        *                     *  *                    *          *                 *                 *             *\n");
+printf("        *                    *   *                    *          *                 *                 *             *\n");
+printf("        *          *****    *    *                    *          ***********       *                 ***************\n");
+printf("        *                  *********                  *          *                 *                 *             *\n");
+printf("        *                        *                    *          *                 *                 *             *\n");
+printf("        *                        *                    *          *                 *                 *             *\n");
+printf("        *                        *                    *          ***************   ***************   *             *\n");
+printf("\n");
+printf("\n");
+printf("\n");
+printf("\n");
+int additional_cost1=0;
+int additional_cost2=0;
+int additional_cost3=0;
+int additional_cost4=0;
+int basic_amt=0;
+printf("1:Laptop;2:Desktop\n");
+printf("Enter Choice\n");
+int choice;
+scanf("%d",&choice);
+switch(choice)
+{
+case 1: printf("1:Apple;2:Dell;3:HP\n");
+        printf("Enter Choice\n");
+		int choice1;
+        scanf("%d",&choice1);
+        switch(choice1)
+		{
+		case 1: basic_amt = 210000;
+		        printf("Enter Processor Choice\n");
+		        printf("1:Intel i7 12th GEN;2:Intel i9 12th GEN;3:M1 PRO;4:M1 MAX\n");
+		        int choice2;
+                scanf("%d",&choice2);
+                switch(choice2)
+		        {
+		        case 1: additional_cost1=0;
+		                break;
+		        case 2: additional_cost1=20000;
+				        break;
+		        case 3: additional_cost1=35000;
+				        break;
+		        case 4: additional_cost1=60000;
+				        break;
+		        default: printf("Invalid Choice\n");
+		        }
+				printf("Enter RAM Capacity Choice\n");
+		        printf("1:4GB;2:8GB;3:16GB;4:32GB\n");
+		        int choice3;
+                scanf("%d",&choice3);
+                switch(choice3)
+		        {
+		        case 1: additional_cost2=0;
+		                break;
+		        case 2: additional_cost2=7000;
+				        break;
+		        case 3: additional_cost2=15000;
+				        break;
+		        case 4: additional_cost2=30000;
+				        break;
+		        default: printf("Invalid Choice\n");
+		        }
+		        printf("Enter Storage Choice\n");
+		        printf("1:256GB;2:512GB;3:1TB;4:2TB\n");
+		        int choice4;
+                scanf("%d",&choice4);
+                switch(choice4)
+		        {
+		        case 1: additional_cost3=0;
+		                break;
+		        case 2: additional_cost3=7000;
+				        break;
+		        case 3: additional_cost3=17000;
+				        break;
+		        case 4: additional_cost3=37000;
+				        break;
+		        default: printf("Invalid Choice\n");
+		        }
+				break;		
+		case 2: basic_amt = 90000;
+                printf("Enter Processor Choice\n");
+                printf("1:AMD Ryzen 5;2:AMD Ryzen 7;3:Intel i7 12th GEN;4:Intel i9 12th GEN\n");
+                int choice5;
+                scanf("%d",&choice5);
+                switch(choice5)
+                {
+                case 1: additional_cost1=0;
+                        break;
+                case 2: additional_cost1=9000;
+                        break;
+                case 3: additional_cost1=15000;
+                        break;
+                case 4: additional_cost1=23000;
+                        break;
+                default: printf("Invalid Choice\n");
+                }
+                printf("Enter RAM Capacity Choice\n");
+                printf("1:4GB;2:8GB;3:16GB;4:32GB\n");
+                int choice6;
+                scanf("%d",&choice6);
+                switch(choice6)
+                {
+                case 1: additional_cost2=0;
+                        break;
+                case 2: additional_cost2=4500;
+                        break;
+                case 3: additional_cost2=7550;
+                        break;
+                case 4: additional_cost2=9000;
+                        break;
+                default: printf("Invalid Choice\n");
+                }
+                printf("Enter Storage Choice\n");
+				printf("1:256GB;2:512GB;3:1TB;4:2TB\n");
+				int choice7;
+				scanf("%d",&choice7);
+				switch(choice7)
+				{
+                case 1: additional_cost3=0;
+                        break;
+                case 2: additional_cost3=3000;
+                        break;
+                case 3: additional_cost3=5750;
+                        break;
+                case 4: additional_cost3=8000;
+                        break;
+                default: printf("Invalid Choice\n");
+                }
+                printf("Enter Graphic Card Capacity Choice \n");
+                printf("1:4GB;2:6GB;3:8GB;4:16GB\n");
+                int choice8;
+                scanf("%d",&choice8);
+                switch(choice8)
+                {
+                case 1: additional_cost4=0;
+                        break;
+                case 2: additional_cost4=3500;
+                        break;
+                case 3: additional_cost4=5500;
+                        break;
+                case 4: additional_cost4=7500;
+                        break;
+                default: printf("Invalid Choice\n");
+                } 
+                break;
+        case 3: basic_amt = 86000;
+                printf("Enter Processor Choice\n");
+                printf("1:AMD Ryzen 5;2:AMD Ryzen 7;3:Intel i7 12th GEN;4:Intel i9 12th GEN\n");
+                int choice9;
+                scanf("%d",&choice9);
+                switch(choice9)
+                {
+                case 1: additional_cost1=0;
+                        break;
+                case 2: additional_cost1=7500;
+                        break;
+                case 3: additional_cost1=12000;
+                        break;
+                case 4: additional_cost1=24000;
+                        break;
+                default: printf("Invalid Choice\n");
+                }
+                printf("Enter RAM Capacity Choice\n");
+                printf("1:4GB;2:8GB;3:16GB;4:32GB\n");
+                int choice10;
+                scanf("%d",&choice10);
+                switch(choice10)
+                {
+                case 1: additional_cost2=0;
+                        break;
+                case 2: additional_cost2=3000;
+                        break;
+                case 3: additional_cost2=5750;
+                        break;
+                case 4: additional_cost2=8000;
+                        break;
+                default: printf("Invalid Choice\n");
+                }
+                printf("Enter Storage Choice\n");
+                printf("1:256GB;2:512GB;3:1TB;4:2TB\n");
+                int choice11;
+                scanf("%d",&choice11);
+                switch(choice11)
+                {
+                case 1: additional_cost3=0;
+                        break;
+                case 2: additional_cost3=1500;
+                        break;
+                case 3: additional_cost3=2500;
+                        break;
+                case 4: additional_cost3=5000;
+                        break;
+                default: printf("Invalid Choice\n");
+                }
+                printf("Enter Graphic Card Capacity Choice \n");
+                printf("1:4GB;2:6GB;3:8GB;4:16GB\n");
+                int choice12;
+                scanf("%d",&choice12);
+                switch(choice12)
+                {
+                case 1: additional_cost4=0;
+                        break;
+                case 2: additional_cost4=3500;
+                        break;
+                case 3: additional_cost4=6500;
+                        break;
+                case 4: additional_cost4=8000;
+                        break;
+                default: printf("Invlaid Choice\n");
+                }
+                break; 
+        default: printf("Invlaid Choice\n");
+		}
+        break;
+case 2: printf("1:Apple;2:Asus;3:Dell\n");
+        printf("Enter Choice\n");
+		int ch;
+        scanf("%d",&ch);
+        switch(ch)
+        {
+        case 1: basic_amt = 110000; 
+                printf("Enter Processor Choice\n"); 
+                printf("1:Intel i7 12th GEN;2:Intel i9 12th GEN;3:M1 PRO;4:M1 MAX\n"); 
+                int ch1;
+                scanf("%d",&ch1);
+                switch(ch1)
+                { 
+                case 1: additional_cost1 = 0; 
+                        break; 
+                case 2: additional_cost1 = 15000; 
+                        break; 
+                case 3: additional_cost1 = 29000; 
+                        break; 
+                case 4: additional_cost1 = 50000; 
+                        break; 
+                default:printf("invalid choice\n"); 
+                }
+                printf("Enter RAM Capacity Choice\n"); 
+                printf("1:4GB;2:8GB;3:16GB;4:32GB\n"); 
+                int ch2;
+                scanf("%d",&ch2);
+                switch (ch2)
+                { 
+                case 1: additional_cost2 = 0; 
+                        break;  
+                case 2: additional_cost2 = 6000; 
+                        break; 
+                case 3: additional_cost2 = 13000;
+                        break; 
+                case 4: additional_cost2 = 26000; 
+                        break; 
+                default:printf("invalid choice\n");
+                } 
+                printf("Enter ROM Capacity Choice\n");
+                printf("1:256GB; 2:512GB; 3:1TB; 4:2TB\n");
+                int ch3;
+                scanf("%d",&ch3);
+                switch(ch3)
+                {
+                case 1: additional_cost3=0;
+                        break;
+                case 2: additional_cost3=7000;
+                        break;
+                case 3: additional_cost3=15000;
+                        break;
+                case 4: additional_cost3=28000;
+                        break;
+                default: printf("Invalid Choice\n");
+                }
+                printf("Enter Graphic Card Capacity Choice \n");
+                printf("1:4GB;2:6GB;3:8GB;4:16GB\n");
+                int ch4;
+                scanf("%d",&ch4);
+                switch(ch4)
+                {
+                case 1: additional_cost4=0;
+                        break;
+                case 2: additional_cost4=5000;
+                        break;
+                case 3: additional_cost4=9000;
+                        break;
+                case 4: additional_cost4=21000;
+                        break;
+                default: printf("Invalid Choice\n");
+                } 
+                break;		
+		case 2: basic_amt = 90000;
+                printf("Enter Processor Choice\n");
+                printf("1:AMD Ryzen 5;2:AMD Ryzen 7;3:Intel i7 12th GEN;4:Intel i9 12th GEN\n");
+                int ch5;
+                scanf("%d",&ch5);
+                switch(ch5)
+                {
+                case 1: additional_cost1=0;
+                        break;
+                case 2: additional_cost1=9000;
+                        break;
+                case 3: additional_cost1=15000;
+                        break;
+                case 4: additional_cost1=23000;
+                        break;
+                default: printf("Invalid Choice\n");
+                }
+                printf("Enter RAM Capacity Choice\n");
+                printf("1:4GB;2:8GB;3:16GB;4:32GB\n");
+                int ch6;
+                scanf("%d",&ch6);
+                switch(ch6)
+                {
+                case 1: additional_cost2=0;
+                        break;
+                case 2: additional_cost2=4500;
+                        break;
+                case 3: additional_cost2=7550;
+                        break;
+                case 4: additional_cost2=9000;
+                        break;
+                default: printf("Invalid Choice\n");
+                }
+                printf("Enter Storage Choice\n");
+				printf("1:256GB;2:512GB;3:1TB;4:2TB\n");
+				int ch7;
+				scanf("%d",&ch7);
+				switch(ch7)
+				{
+                case 1: additional_cost3=0;
+                        break;
+                case 2: additional_cost3=3000;
+                        break;
+                case 3: additional_cost3=5750;
+                        break;
+                case 4: additional_cost3=8000;
+                        break;
+                default: printf("Invalid Choice\n");
+                }
+                printf("Enter Graphic Card Capacity Choice \n");
+                printf("1:4GB;2:6GB;3:8GB;4:16GB\n");
+                int ch8;
+                scanf("%d",&ch8);
+                switch(ch8)
+                {
+                case 1: additional_cost4=0;
+                        break;
+                case 2: additional_cost4=3500;
+                        break;
+                case 3: additional_cost4=5500;
+                        break;
+                case 4: additional_cost4=7500;
+                        break;
+                default: printf("Invalid Choice\n");
+                } 
+                break;
+		case 3: basic_amt = 40000;
+                printf("Enter Processor Choice\n");
+                printf("1:AMD Ryzen 5;2:AMD Ryzen 7;3:Intel i7 12th GEN;4:Intel i9 12th GEN\n");
+                int ch9;
+                scanf("%d",&ch9);
+                switch(ch9)
+                {
+                case 1: additional_cost1=0;
+                        break;
+                case 2: additional_cost1=7500;
+                        break;
+                case 3: additional_cost1=12000;
+                        break;
+                case 4: additional_cost1=24000;
+                        break;
+                default: printf("Invalid Choice\n");
+                }
+			    printf("Enter RAM capacity choice\n"); 
+			    printf("1:4GB;2:8GB;3:16GB;4:32GB\n"); 
+			    int ch10; 
+			    scanf("%d",&ch10);
+			    switch(ch10)
+			    {
+		    	case 1: additional_cost2=0;
+			        	break;
+			    case 2: additional_cost2=2000;
+				        break;
+			    case 3: additional_cost2=3500;
+				        break;
+			    case 4: additional_cost2=6000;
+				        break; 
+			    default: printf("Invalid choice\n");
+			    }
+			    printf("Enter Storage choice\n");
+			    printf("1:256GB;2:512GB;3:1TB;4:2TB\n"); 
+			    int ch11;
+			    scanf("%d",&ch11);
+			    switch(ch11)
+			    {
+			    case 1: additional_cost3=0;
+				        break; 
+			    case 2: additional_cost3=1600;
+				        break; 
+		     	case 3: additional_cost3=3000;
+			        	break;
+		      	case 4: additional_cost3=5600;
+		        		break;
+		    	default: printf("Invalid choice\n");
+			    }
+			    printf("Enter Graphic Card Capacity choice\n"); 
+			    printf("1:4GB;2:6GB;3:8GB;4:16GB\n"); 
+			    int ch12;
+			    scanf("%d",&ch12);
+			    switch(ch12)
+			    {
+			    case 1: additional_cost4=0;
+		        		break;
+		    	case 2: additional_cost4=1300;
+		        		break; 
+		    	case 3: additional_cost4=2400;
+		        		break; 
+		    	case 4: additional_cost4=4000;
+		        		break; 
+		    	default: printf("Invalid choice\n");
+			    }		
+		        break; 
+	    default: printf("Invalid choice\n");
+		}
+		break;
+default: printf("Invalid choice\n");
+}
+printf("Enter your name\n"); 
+char first_name[100];
+char last_name[100];
+scanf("%s %s",first_name,last_name);
+printf("Enter your contact number\n"); 
+long long int contact_number;
+scanf("%lld",&contact_number);
+int amt = basic_amt + additional_cost1 + additional_cost2 + additional_cost3 + additional_cost4; 
+double GST = amt * (18.0/100.0); 
+double total_amt = amt + GST;
+printf("\n");
+printf("\n");
+printf("\n");
+printf("\n"); 
+printf("************************** Reciept Generated *********************\n"); 
+printf("\n"); 
+printf("Name: %s %s\n",first_name,last_name);  
+printf("Contact: %lld\n",contact_number); 
+printf("Basic amount = %d\n",basic_amt); 
+printf("Processor cost = %d\n",additional_cost1);
+printf("RAM cost = %d\n",additional_cost2); 
+printf("ROM cost = %d\n",additional_cost3); 
+printf("Graphic card cost = %d\n",additional_cost4); 
+printf("GST = %0.2lf\n",GST); 
+printf("Amount to be payable before GST tax = %d\n",amt); 
+printf("Amount to be payable after GST tax = %0.2lf\n",total_amt); 
+printf("\n");
+printf("*************************** Thank You ****************************\n");
+return 0;
+}		
