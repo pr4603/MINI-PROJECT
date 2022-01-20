@@ -456,8 +456,7 @@ default: printf("Invalid choice\n");
 }
 printf("Enter your name\n"); 
 char first_name[100];
-char last_name[100];
-scanf("%s %s",first_name,last_name);
+scanf("%s",first_name);
 contact:
 printf("Enter your contact number\n"); 
 char contact_number[11];
@@ -482,7 +481,7 @@ printf("\n");
 printf("\n"); 
 printf("************************** Reciept Generated *********************\n"); 
 printf("\n"); 
-printf("Name: %s %s\n",first_name,last_name);  
+printf("Name: %s\n",first_name);  
 printf("Contact Number: %s\n",contact_number); 
 printf("Basic amount = %d\n",basic_amt); 
 printf("Processor cost = %d\n",additional_cost1);
