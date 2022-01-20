@@ -460,16 +460,11 @@ char last_name[100];
 scanf("%s %s",first_name,last_name);
 contact:
 printf("Enter your contact number\n"); 
-long long int contact_number;
-scanf("%lld",&contact_number);
+char contact_number[11];
+scanf("%s",&contact_number);
 int count=0;
-int n=contact_number; 
-while (n != 0)
-{
-    n /= 10;
-    ++count;
-}
-if (count!=10)
+int n=strlen(contact_number);
+if (n!=10)
 {
 printf("Not A Valid Number\n");
 goto contact;
@@ -488,11 +483,11 @@ printf("\n");
 printf("************************** Reciept Generated *********************\n"); 
 printf("\n"); 
 printf("Name: %s %s\n",first_name,last_name);  
-printf("Contact: %lld\n",contact_number); 
+printf("Contact Number: %s\n",contact_number); 
 printf("Basic amount = %d\n",basic_amt); 
 printf("Processor cost = %d\n",additional_cost1);
 printf("RAM cost = %d\n",additional_cost2); 
-printf("ROM cost = %d\n",additional_cost3); 
+printf("Storage cost = %d\n",additional_cost3); 
 printf("Graphic card cost = %d\n",additional_cost4); 
 printf("GST = %0.2lf\n",GST); 
 printf("Amount to be payable before GST tax = %d\n",amt); 
@@ -500,4 +495,4 @@ printf("Amount to be payable after GST tax = %0.2lf\n",total_amt);
 printf("\n");
 printf("*************************** Thank You ****************************\n");
 return 0;
-}		
+}
