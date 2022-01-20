@@ -458,9 +458,26 @@ printf("Enter your name\n");
 char first_name[100];
 char last_name[100];
 scanf("%s %s",first_name,last_name);
+contact:
 printf("Enter your contact number\n"); 
 long long int contact_number;
 scanf("%lld",&contact_number);
+int count=0;
+int n=contact_number; 
+while (n != 0)
+{
+    n /= 10;
+    ++count;
+}
+if (count!=10)
+{
+printf("Not A Valid Number\n");
+goto contact;
+}
+else
+{
+printf("Valid Number\n"); 
+}
 int amt = basic_amt + additional_cost1 + additional_cost2 + additional_cost3 + additional_cost4; 
 double GST = amt * (18.0/100.0); 
 double total_amt = amt + GST;
