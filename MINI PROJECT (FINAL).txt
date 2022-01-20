@@ -461,7 +461,6 @@ contact:
 printf("Enter your contact number\n"); 
 char contact_number[11];
 scanf("%s",&contact_number);
-int count=0;
 int n=strlen(contact_number);
 if (n!=10)
 {
